@@ -111,10 +111,6 @@
     },
     {
       "type": "vcs",
-      "url": "git@gitlab.salamek.cz:sadam/dravencms-dravencms.git"
-    },
-    {
-      "type": "vcs",
       "url": "git@gitlab.salamek.cz:sadam/dravencms-base.git"
     }
   ],
