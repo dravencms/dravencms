@@ -1,3 +1,17 @@
+/app/FrontModule/cms
+/app/config/config.local.neon
+/vendor/
+/composer.lock
+/temp/*
+!/temp/.htaccess
+!/temp/web.config
+/log/*
+!/log/.htaccess
+!/log/web.config
+/www/data/*
+!/www/data/README.md
+/www/webtemp/*
+!/www/webtemp/README.md
 /www/modules/*/bower_components
 /www/modules/*/*/bower_components
 /www/modules/*/*/template/bower_components
