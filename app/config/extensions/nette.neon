@@ -11,5 +11,5 @@ di:
     debugger: true
 
 services:
-    routerFactory: RouterFactory
+    routerFactory: Dravencms\RouterFactory
     router: @routerFactory::createRouter

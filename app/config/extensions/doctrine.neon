@@ -3,7 +3,6 @@ extensions:
     annotations: Kdyby\Annotations\DI\AnnotationsExtension
     gedmo: Rixxi\Gedmo\DI\OrmExtension
     doctrine: Kdyby\Doctrine\DI\OrmExtension
-    doctrine2identity: Majkl578\NetteAddons\Doctrine2Identity\DI\IdentityExtension
     - Symnedi\EventDispatcher\DI\EventDispatcherExtension
     migrations: Zenify\DoctrineMigrations\DI\MigrationsExtension
 
