@@ -17,10 +17,5 @@
   },
   "require-dev": {
     "nette/tester": "@dev"
-  },
-  "autoload": {
-    "psr-0": {
-      "Dravencms\\": "src/"
-    }
   }
 }

@@ -1,3 +1,4 @@
-/deploy/www/modules/*/bower_components
-/deploy/www/modules/*/*/bower_components
+/www/modules/*/bower_components
+/www/modules/*/*/bower_components
+/www/modules/*/*/template/bower_components
 /.idea
