@@ -1,0 +1,4 @@
+services:
+    - Dravencms\Components\BaseForm
+    - Dravencms\Components\BaseGrid
+    - Dravencms\Components\BasePaginator

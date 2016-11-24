@@ -1,0 +1,52 @@
+extensions:
+    events: Kdyby\Events\DI\EventsExtension
+    annotations: Kdyby\Annotations\DI\AnnotationsExtension
+    gedmo: Rixxi\Gedmo\DI\OrmExtension
+    doctrine: Kdyby\Doctrine\DI\OrmExtension
+    doctrine2identity: Majkl578\NetteAddons\Doctrine2Identity\DI\IdentityExtension
+    - Symnedi\EventDispatcher\DI\EventDispatcherExtension
+    migrations: Zenify\DoctrineMigrations\DI\MigrationsExtension
+
+gedmo:
+    #translatableLocale: cs
+    #defaultLocale: cs
+    translationFallback: false
+
+    # enable per annotation
+    loggable: off #Too HC
+    sluggable: on
+    softDeleteable: on
+    sortable: on
+    timestampable: on
+    translatable: on
+    treeable: on
+    uploadable: off # System for storing info about uploaded/stored files...
+
+doctrine:
+    host: %database.host%
+    user: %database.user%
+    password: %database.password%
+    dbname: %database.dbname%
+    driver: %database.driver%
+    metadata:
+        App: %appDir%
+        Dravencms: %appDir%/../vendor/salamek
+
+    types:
+        bit: Doctrine\DBAL\Types\BooleanType
+
+    filters:
+        # without this softDeleteable won't work...            ...probably
+        soft-deleteable: Gedmo\SoftDeleteable\Filter\SoftDeleteableFilter
+
+    hydrators:
+        # We need to register this manualy cos getResult replaces hydrator and hydrator is not registed there for some reason...
+        __gedmo.translatable.object.hydrator: Gedmo\Translatable\Hydrator\ORM\ObjectHydrator
+
+migrations:
+    table: doctrine_migrations # database table for applied migrations
+    #column: version # database column for applied migrations
+    directory: %appDir%/../migrations # directory, where all migrations are stored
+    namespace: Migrations # namespace of migration classes
+    codingStandard: spaces # or "spaces", coding style for generated classes
+    versionsOrganization: 'year' # null, "year" or "year_and_month", organizes migrations to subdirectories

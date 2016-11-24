@@ -1,0 +1,50 @@
+webloader:
+  css:
+    artificialReason:
+      remoteFiles:
+        - 'http://fonts.googleapis.com/css?family=Oxygen:100,300,400|Open+Sans:400italic,400,600|Muli:300|Indie+Flower:400|Oswald:400,700,300&subset=latin,latin-ext'
+      files:
+        - modules/front/artificial-reason/css/preload.css
+        - modules/front/artificial-reason/bower_components/bxslider-4/dist/jquery.bxslider.min.css
+        - modules/front/artificial-reason/bower_components/bootstrap/dist/css/bootstrap.min.css
+        - modules/front/artificial-reason/bower_components/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.min.css
+        - modules/front/artificial-reason/bower_components/animate.css/animate.min.css
+        - modules/front/artificial-reason/bower_components/font-awesome/css/font-awesome.min.css
+        - modules/front/artificial-reason/bower_components/Buttons/css/buttons.min.css
+        - modules/front/artificial-reason/bower_components/owl-carousel/owl-carousel/owl.carousel.css
+        - modules/front/artificial-reason/bower_components/owl-carousel/owl-carousel/owl.theme.css
+        - modules/front/artificial-reason/bower_components/blueimp-gallery/css/blueimp-gallery.min.css
+        - modules/front/artificial-reason/bower_components/blueimp-bootstrap-image-gallery/css/bootstrap-image-gallery.min.css
+        - modules/front/artificial-reason/css/style-blue.css
+        - modules/front/artificial-reason/css/width-full.css
+
+      filters:
+        - @cssMin
+      fileFilters:
+        - @wlCssFilter
+        - @sassFilter
+
+
+  js:
+    artificialReason:
+      remoteFiles:
+        - https://www.google.com/recaptcha/api.js
+      files:
+        - modules/front/artificial-reason/bower_components/jquery/dist/jquery.min.js
+        - modules/front/artificial-reason/bower_components/jquery.cookie/jquery.cookie.js
+        - modules/front/artificial-reason/bower_components/imagesloaded/imagesloaded.pkgd.min.js
+        - modules/front/artificial-reason/bower_components/bootstrap/dist/js/bootstrap.min.js
+        - modules/front/artificial-reason/bower_components/bootstrap-switch/dist/js/bootstrap-switch.min.js
+        - modules/front/artificial-reason/bower_components/wow/dist/wow.min.js
+        - modules/front/artificial-reason/bower_components/bxslider-4/dist/jquery.bxslider.min.js
+        - modules/front/artificial-reason/bower_components/Buttons/js/buttons.js
+        - modules/front/artificial-reason/bower_components/mixitup/build/jquery.mixitup.min.js
+        - modules/front/artificial-reason/bower_components/masonry/dist/masonry.pkgd.min.js
+        - modules/front/artificial-reason/bower_components/jquery-match-height/dist/jquery.matchHeight-min.js
+        - modules/front/artificial-reason/bower_components/blueimp-gallery/js/jquery.blueimp-gallery.min.js
+        - modules/front/artificial-reason/bower_components/blueimp-bootstrap-image-gallery/js/bootstrap-image-gallery.min.js
+        - modules/front/artificial-reason/js/DropdownHover.js
+        - modules/front/js/mailprotector.js
+        - modules/front/artificial-reason/js/app.js
+        - modules/front/artificial-reason/js/holder.js
+        - modules/front/artificial-reason/js/home_info.js

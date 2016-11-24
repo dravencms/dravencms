@@ -1,0 +1,8 @@
+extensions:
+    files: Salamek\Files\DI\FilesExtension
+
+files:
+    assetsDir: %wwwDir%/data
+    storageDir: %wwwDir%/webtemp
+    iconDir: %wwwDir%/modules/admin/img/filesManager
+    blankImage: %wwwDir%/modules/front/college-green/img/key-handle.png

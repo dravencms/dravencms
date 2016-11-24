@@ -1,0 +1,14 @@
+extensions:
+    cms: Salamek\Cms\DI\CmsExtension
+
+cms:
+    tempPath: %appDir%/FrontModule/cms
+    presenterModule: Front
+    presenterMapping: Dravencms\*Module\*Presenter
+    parentClass: Dravencms\FrontModule\SlugPresenter
+    layoutDir: %appDir%/FrontModule/templates
+    defaultLayout: %layout.name%
+    mappings:
+        # [module]\[component]\[action]: [module]\[component]
+        Dravencms\FrontModule\Components\*\*\-\*Factory: Dravencms\Model\*\Repository\*Repository
+        Dravencms\FrontModule\Components\*\*\*Factory: App\Model\*\Repository\*Repository

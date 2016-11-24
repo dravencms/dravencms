@@ -1,0 +1,88 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 21.4.2015, 14:49:04
+    Author     : Adam Schubert <adam.schubert@sg1-game.net>
+*/
+
+
+@mixin actions
+{
+  .actions
+  {
+    position: absolute;
+    top: 115px;
+    right: 20px;
+    padding: 0;
+
+    h3
+    {
+      color: $ivtimuno-red-color;
+      padding-bottom: 0px;
+    }
+
+    .btn
+    {
+      padding: 5px 15px;
+      border-radius: 0;
+      font-size: 14px;
+      font-weight: bold;
+      margin-top: 5px;
+
+      &.btn-danger
+      {
+        /* url('../images/front/buy-button-background.png') repeat-x bottom center*/
+        background: $ivtimuno-red-color;
+      }
+
+      &.btn-default
+      {
+        background: #77787b;
+      }
+    }
+
+    .count
+    {
+      width: 30px;
+
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button
+      {
+        /* display: none; <- Crashes Chrome on hover */
+        -webkit-appearance: none;
+        margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+      }
+    }
+  }
+}
+
+@mixin tagbox
+{
+  .tagbox
+  {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 116px;
+    height: 100px;
+    .tag
+    {
+      width: 116px;
+      height: 24px;
+      margin-bottom: 10px;
+
+      &.action
+      {
+        background: url('../images/front/akce.png') no-repeat;
+      }
+
+      &.bonus
+      {
+        background: url('../images/front/bonus.png') no-repeat;
+      }
+    }
+  }
+}

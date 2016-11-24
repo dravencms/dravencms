@@ -1,0 +1,32 @@
+#
+# SECURITY WARNING: it is CRITICAL that this file & directory are NOT accessible directly via a web browser!
+#
+# If you don't protect this directory from direct web access, anybody will be able to see your passwords.
+# http://nette.org/security-warning
+#
+
+
+parameters:
+  dataDir: %wwwDir%/data
+
+includes:
+  - extensions/doctrine.neon
+  - extensions/console.neon
+  - extensions/nette.neon
+  - extensions/php.neon
+  - extensions/sentry.neon
+  - extensions/translation.neon
+  - extensions/webloader.neon
+  - extensions/visualPaginator.neon
+  - extensions/files.neon
+  - extensions/recaptcha.neon
+  - extensions/gravatar.neon
+  - extensions/templatedEmail.neon
+  - extensions/gitlab.neon
+  - extensions/cms.neon
+
+
+  - modules/modules.neon
+
+  - components.neon
+

@@ -1,0 +1,24 @@
+{
+  "name": "grizly-cz",
+  "version": "1.0",
+  "private": true,
+  "dependencies": {
+    "jquery": ">=1.11.1",
+    "jquery-ui": ">=1.11.4",
+    "jquery-placeholder": ">=2.0.7",
+    "shufflejs": "v3.0.0",
+    "jquery.stellar": ">=v0.6.2",
+    "jquery-touchswipe": ">=1.6.15",
+    "bootstrap": ">=3.3.5",
+    "iCheck": ">=1.0.2",
+    "lightgallery": ">=1.2.14",
+    "modernizr": ">=2.8.3",
+    "throttle-debounce": ">=0.1.1",
+    "nette-forms": ">=0.0.3",
+    "nette.ajax.js": ">=2.1.0",
+    "font-awesome": ">=v4.5.0",
+    "nouislider": ">=8.2.1",
+    "jquery.countdown": ">=v2.1.0",
+    "outlined-iconset": "v1.0"
+  }
+}

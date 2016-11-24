@@ -1,0 +1,2 @@
+extensions:
+  visualPaginator: IPub\VisualPaginator\DI\VisualPaginatorExtension

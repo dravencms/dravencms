@@ -1,0 +1,15 @@
+
+application:
+    errorPresenter: Front:Error
+    mapping:
+        *: Dravencms\*Module\*Presenter
+
+session:
+    expiration: 14 days
+
+di:
+    debugger: true
+
+services:
+    routerFactory: RouterFactory
+    router: @routerFactory::createRouter

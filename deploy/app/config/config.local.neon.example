@@ -1,0 +1,10 @@
+parameters:
+    database:
+        host: 192.168.1.101
+        user: 'grizlycz'
+        password: ''
+        dbname: grizlycz
+        driver: pdo_mysql
+
+    layout:
+        name: collegeGreen
