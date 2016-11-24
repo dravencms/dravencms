@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="{$lang}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>{$title|striptags|upper}</title>
+
+    <link rel="shortcut icon" href="{$basePath}/modules/front/artificial-reason/img/favicon.png"/>
+
+    <meta name="description" content="{$metaDescription|striptags}" n:ifset="$metaDescription">
+    <meta name="keywords" content="{$metaKeywords|striptags}" n:ifset="$metaKeywords">
+    <meta name="robots" content="{$metaRobots|striptags}" n:ifset="$metaRobots">
+
+
+    <!-- CSS -->
+    {control css}
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    {control seoSeoTracking:header}
+</head>
+
+<!-- Preloader -->
+<div id="preloader">
+    <div id="status">&nbsp;</div>
+</div>
+
+<body class="{$bodyClass}">
+<div class="sb-site-container">
+    <div class="boxed">
+
+        <header id="header-full-top" class="hidden-xs header-full">
+            <div class="container">
+                <div class="header-full-title">
+                    <h1 class="animated fadeInRight"><a href="{$basePath}/">rtzz <span>morava</span></a></h1>
+                    <p class="animated fadeInRight">Revize zdvihacích zařízení</p>
+                </div>
+                <nav class="top-nav">
+
+                    <div class="dropdown animated fadeInDown animation-delay-13">
+                        <a href="mailto:chodur.rtzz@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> chodur.rtzz@gmail.com</a>
+                    </div> <!-- dropdown -->
+
+                    <div class="dropdown animated fadeInDown animation-delay-13">
+                        <a href="tel:702197471"><i class="fa fa-phone" aria-hidden="true"></i> 702 197 471</a>
+                    </div> <!-- dropdown -->
+
+                    <div class="dropdown animated fadeInDown animation-delay-13">
+                        <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-search"></i></a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-search-box animated fadeInUp">
+                            {control structureSearchBar}
+                            {*<form role="form">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-ar btn-primary" type="button">Go!</button>
+                            </span>
+                                </div><!-- /input-group -->
+                            </form>*}
+                        </div>
+                    </div> <!-- dropdown -->
+                </nav>
+            </div> <!-- container -->
+        </header> <!-- header-full -->
+        <nav class="navbar navbar-default navbar-header-full navbar-dark yamm navbar-static-top" role="navigation" id="header">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a id="ar-brand" class="navbar-brand hidden-lg hidden-md hidden-sm" href="{$basePath}/">rtzz <span>morava</span></a>
+                </div> <!-- navbar-header -->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    {control structureMenuFront}
+                </div><!-- navbar-collapse -->
+            </div><!-- container -->
+        </nav>
+        {ifset #content}
+            <header class="main-header" n:if="$showH1">
+                <div class="container">
+                    <h1 class="page-title">{$h1}</h1>
+
+                    <!--ol class="breadcrumb pull-right">
+                        <li><a href="#">Portfolio</a></li>
+                        <li class="active">Portfolio with captions</li>
+                    </ol-->
+                    {control structureMenuBreadcrumb}
+                </div>
+            </header>
+            <div class="container">
+                {include #content}
+            </div>
+        {/ifset}
+
+        {if $bodyClass == 'homepage'}
+        <section class="wrap-hero margin-bottom">
+            <div id="carousel-example-ny" class="carousel carousel-hero slide" data-ride="carousel" data-interval="9000">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-ny" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-ny" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-ny" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6 col-md-push-6">
+                                    <div class="">
+                                        <img src="{$basePath}/modules/front/artificial-reason/img/crane.png" alt="Crane" class="img-responsive animated zoomInUp animation-delay-25 img-crane">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-md-pull-6">
+                                    <div class="carousel-caption">
+                                        <h1 class="animated fadeInDownBig animation-delay-7 carousel-title">Revize <span>zdvihacích zařízení</span></h1>
+                                        <ul class="list-unstyled carousel-list">
+                                            <li><i class="fa fa-angle-right animated fadeIn animation-delay-11"></i><span class="animated fadeInRightBig animation-delay-13">Oblastí <strong>zdvihacích zařízení</strong> se zabývám již od roku <strong>2005</strong>.</span></li>
+                                            <li><i class="fa fa-angle-right animated fadeIn animation-delay-15"></i><span
+                                                        class="animated fadeInRightBig animation-delay-16">Ve funkci revizního technika <strong>zdvihacích zařízení</strong> jsem pak od roku <strong>2010</strong>.</span></li>
+                                            <li><i class="fa fa-angle-right animated fadeIn animation-delay-19"></i><span
+                                                        class="animated fadeInRightBig animation-delay-19">Na revize a revizní zkoušky vyhrazených zařízení mám platná <strong>osvědčení vydaná Technickou inspekcí České republiky.</strong></span></li>
+                                            <li><i class="fa fa-angle-right animated fadeIn animation-delay-19"></i><span
+                                                        class="animated fadeInRightBig animation-delay-19">Pro montáže, opravy, revize a revizní zkoušky vyhrazených zařízení jsem <strong>nositelem všech příslušných oprávnění</strong></span></li>
+                                        </ul>
+                                        <!--div class="action-zone">
+                                            <a href="https://wrapbootstrap.com/theme/artificial-reason-responsive-full-pack-WB0307B17"
+                                               class="btn btn-ar btn-transparent-opaque btn-xl animated fadeInUp animation-delay-22"><i class="fa fa-opencart"></i> Purchase Now</a>
+                                            <a href="index.html#" class="btn btn-ar btn-transparent-opaque btn-xl animated fadeInUp animation-delay-25"><i class="fa fa-search"></i> Know More</a>
+                                        </div-->
+                                    </div>
+                                </div>
+                            </div> <!--row -->
+                        </div> <!-- container -->
+                    </div> <!-- item -->
+
+                    <div class="item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6 col-md-push-6">
+                                    <div class="">
+                                        <img src="{$basePath}/modules/front/artificial-reason/img/preasure.png" class="img-responsive animated zoomInRight animation-delay-20" alt="Image">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-md-pull-6">
+                                    <div class="carousel-caption">
+                                        <h1 class="animated fadeInDownBig animation-delay-7 carousel-title">Revize <span>tlakových zařízení.</span></h1>
+                                        <ul class="list-unstyled carousel-list">
+                                            <li><i class="fa fa-angle-right animated fadeIn animation-delay-11"></i><span
+                                                        class="animated fadeInRightBig animation-delay-13">Praktické zkušenosti v oblasti <strong>tlakových zařízení</strong> mám již od roku <strong>1999</strong>.</span></li>
+                                            <li><i class="fa fa-angle-right animated fadeIn animation-delay-15"></i><span class="animated fadeInRightBig animation-delay-16">Jako <strong>revizní technik tlakových zařízení</strong> pak působím od roku <strong>2013</strong></span></li>
+                                            <li><i class="fa fa-angle-right animated fadeIn animation-delay-19"></i><span
+                                                        class="animated fadeInRightBig animation-delay-19">Na revize a revizní zkoušky vyhrazených zařízení mám platná <strong>osvědčení vydaná Technickou inspekcí České republiky.</strong></span></li>
+                                            <li><i class="fa fa-angle-right animated fadeIn animation-delay-19"></i><span
+                                                        class="animated fadeInRightBig animation-delay-19">Pro montáže, opravy, revize a revizní zkoušky vyhrazených zařízení jsem <strong>nositelem všech příslušných oprávnění</strong></span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div> <!--row -->
+                        </div> <!-- container -->
+                    </div> <!-- item -->
+
+                    <div class="item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6 col-md-push-6">
+                                    <div class="">
+                                        <img src="{$basePath}/modules/front/artificial-reason/img/azz.png" alt="" class="img-responsive animated zoomInRight animation-delay-25">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-md-pull-6">
+                                    <div class="carousel-caption">
+                                        <h1 class="animated fadeInDownBig animation-delay-7 carousel-title">Jsem člen <span>Asociace odborných pracovníků pro zdvihací zařízení ČR</span>.</h1>
+                                        <p class="animated zoomIn animation-delay-20">Kvalitu své práce mohu garantovat na základě dlouholeté praxe a svých odborných znalostí, včetně znalostí platné legislativy a technických norem, které si průběžně aktualizuji účastí na pravidelných školeních a seminářích pořádaných Asociací ZZ.</p>
+                                    </div>
+                                </div>
+                            </div> <!--row -->
+                        </div> <!-- container -->
+                    </div> <!-- item -->
+                </div> <!-- carousel-inner -->
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="index.html#carousel-example-ny" data-slide="prev">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                <a class="right carousel-control" href="index.html#carousel-example-ny" data-slide="next">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+        </section> <!-- carousel -->
+
+        <div class="container">
+            <section class="margin-bottom">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="right-line">Nabízené služby</h2>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="text-icon wow fadeInUp">
+                            <span class="icon-ar icon-ar-lg"><i class="fa fa-cogs"></i></span>
+                            <div class="text-icon-content">
+                                <h3 class="no-margin"><a href="#">Revize a inspekce zdvihacích zařízení třídy O, A</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="text-icon wow fadeInUp">
+                            <span class="icon-ar icon-ar-lg"><i class="fa fa-truck"></i></span>
+                            <div class="text-icon-content">
+                                <h3 class="no-margin"><a href="#">Revize a inspekce zdvihacích zařízení třídy D</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="text-icon wow fadeInUp">
+                            <span class="icon-ar icon-ar-lg"><i class="fa fa-window-maximize"></i></span>
+                            <div class="text-icon-content">
+                                <h3 class="no-margin"><a href="#">Revize a periodické přezkoušení a zkoušky pojízdných zdvihacích pracovních plošin</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="text-icon wow fadeInUp">
+                            <span class="icon-ar icon-ar-lg"><i class="fa fa-cubes"></i></span>
+                            <div class="text-icon-content">
+                                <h3 class="no-margin"><a href="#">Revize zvedáků vozidel</a></h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="text-icon wow fadeInUp">
+                            <span class="icon-ar icon-ar-lg"><i class="fa fa-exclamation-triangle"></i></span>
+                            <div class="text-icon-content">
+                                <h3 class="no-margin"><a href="#">Tvorbu systémů bezpečné práce dle ČSN ISO 12480-1.</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="text-icon wow fadeInUp">
+                            <span class="icon-ar icon-ar-lg"><i class="fa fa-tachometer"></i></span>
+                            <div class="text-icon-content">
+                                <h3 class="no-margin"><a href="#">Revize tlakových nádob podle ČSN 69 0012</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="text-icon wow fadeInUp">
+                            <span class="icon-ar icon-ar-lg"><i class="fa fa-graduation-cap"></i></span>
+                            <div class="text-icon-content">
+                                <h3 class="no-margin"><a href="#">Školení jeřábníků, vazačů, obsluhovatelů a obsluh pracovních plošin</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="text-icon wow fadeInUp">
+                            <span class="icon-ar icon-ar-lg"><i class="fa fa-graduation-cap"></i></span>
+                            <div class="text-icon-content">
+                                <h3 class="no-margin"><a href="#">Školení obsluh tlakových nádob</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- row -->
+            </section>
+            {/if}
+            {if $h1 == 'Kontakt'}
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="section-title no-margin-top">Send Message</h2>
+                        </div>
+                        <div class="col-md-8">
+                            <section>
+                                <p>Lorem ipsum Ex aliqua tempor nisi laboris dolor id laborum irure minim tempor in sit dolore amet sit esse nostrud tempor nulla consequat aute in nostrud laboris sint ullamco amet nisi pariatur officia nulla pariatur in id et labore dolore ad sit.</p>
+
+                                <form role="form">
+                                    <div class="form-group">
+                                        <label for="InputName">Name</label>
+                                        <input type="email" class="form-control" id="InputName">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="InputEmail1">Email address</label>
+                                        <input type="email" class="form-control" id="InputEmail1">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="InputMessage">Mesagge</label>
+                                        <textarea class="form-control" id="InputMessage" rows="8"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-ar btn-primary">Submit</button>
+                                    <div class="clearfix"></div>
+                                </form>
+                            </section>
+                        </div>
+
+                        <div class="col-md-4">
+                            <section>
+                                <div class="panel panel-primary">
+                                    <div class="panel-heading"><i class="fa fa-envelope-o"></i> Additional Information</div>
+                                    <div class="panel-body">
+                                        <h4 class="section-title no-margin-top">Contacts</h4>
+                                        <address>
+                                            <strong>Open Mind, Inc.</strong><br>
+                                            795 Folsom Ave, Suite 600<br>
+                                            San Francisco, CA 94107<br>
+                                            <abbr title="Phone">P:</abbr> (123) 456-7890 <br>
+                                            Mail: <a href="#">support@openmid.com</a>
+                                        </address>
+
+                                        <!-- Business Hours -->
+                                        <h4 class="section-title no-margin-top">Business Hours</h4>
+                                        <ul class="list-unstyled">
+                                            <li><strong>Monday-Friday:</strong> 9am to 7pm</li>
+                                            <li><strong>Saturday:</strong> 9am to 2pm</li>
+                                            <li><strong>Sunday:</strong> Closed</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+
+                    <hr class="dotted">
+
+                    <section>
+                        <div class="well well-sm">
+                            <iframe width="100%" height="350" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=central%2Bpark&amp;ie=UTF8&amp;z=12&amp;t=m&amp;iwloc=near&amp;output=embed"></iframe>
+                        </div>
+                    </section>
+                </div>
+            {/if}
+        <footer id="footer">
+            <p>&copy; {date('Y')} <a href="mailto:adam.schubert@sg1-game.net">Adam Schubert</a>, All rights reserved.</p>
+        </footer>
+
+    </div> <!-- boxed -->
+</div> <!-- sb-site -->
+
+<div id="back-top">
+    <a href="index.html#header"><i class="fa fa-chevron-up"></i></a>
+</div>
+
+<!-- Scripts -->
+{control js}
+{control seoSeoTracking:footer}
+</body>
+
+</html>
