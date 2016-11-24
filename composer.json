@@ -8,14 +8,22 @@
   "license": [
     "LGPL-3.0"
   ],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@gitlab.salamek.cz:sadam/dravencms-base.git"
+    }
+  ],
   "authors": [
     {
       "name": "Adam Schubert"
     }
   ],
-  "require": {
-  },
   "require-dev": {
     "nette/tester": "@dev"
-  }
+  },
+  "require": {
+    "dravencms/base": "@dev"
+  },
+  "minimum-stability": "dev"
 }
