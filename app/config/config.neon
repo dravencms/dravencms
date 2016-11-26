@@ -15,10 +15,10 @@ includes:
   - extensions/nette.neon
   - extensions/php.neon
   - extensions/sentry.neon
-  - extensions/translation.neon
   - extensions/webloader.neon
   - extensions/visualPaginator.neon
   - extensions/files.neon
+  - extensions/translation.neon
   - extensions/recaptcha.neon
   - extensions/gravatar.neon
   - extensions/templatedEmail.neon
@@ -26,7 +26,7 @@ includes:
   - extensions/cms.neon
 
 
-  - modules/modules.neon
+  - packages/packages.neon
 
   - components.neon
 
