@@ -136,7 +136,7 @@
     "dravencms/form": "@dev",
     "dravencms/map": "@dev",
     "dravencms/discussion": "@dev",
-    "dravencms/faq": "@dev",
+    "dravencms/faq": "dev-master",
     "dravencms/carousel": "@dev",
     "dravencms/partner": "@dev",
     "dravencms/timeline": "dev-master",
