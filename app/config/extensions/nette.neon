@@ -9,7 +9,3 @@ session:
 
 di:
     debugger: true
-
-services:
-    routerFactory: Dravencms\RouterFactory
-    router: @routerFactory::createRouter

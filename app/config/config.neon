@@ -22,8 +22,6 @@ includes:
   - extensions/gravatar.neon
   - extensions/templatedEmail.neon
   - extensions/gitlab.neon
-  - extensions/cms.neon
-
 
   - packages/packages.neon
 

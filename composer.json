@@ -127,6 +127,7 @@
     "nette/tester": "@dev"
   },
   "require": {
+    "dravencms/structure": "@dev",
     "dravencms/base": "@dev",
     "dravencms/seo": "@dev",
     "dravencms/issue": "@dev",
