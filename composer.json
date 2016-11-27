@@ -129,20 +129,6 @@
   "require": {
     "dravencms/structure": "@dev",
     "dravencms/base": "@dev",
-    "dravencms/seo": "@dev",
-    "dravencms/issue": "@dev",
-    "dravencms/file": "@dev",
-    "dravencms/article": "@dev",
-    "dravencms/gallery": "@dev",
-    "dravencms/form": "@dev",
-    "dravencms/map": "@dev",
-    "dravencms/discussion": "@dev",
-    "dravencms/faq": "dev-master",
-    "dravencms/carousel": "@dev",
-    "dravencms/partner": "@dev",
-    "dravencms/timeline": "dev-master",
-    "dravencms/primitive": "dev-master",
-    "dravencms/social": "dev-master",
     "dravencms/packager": "dev-master"
   },
   "scripts": {
