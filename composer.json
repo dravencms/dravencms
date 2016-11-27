@@ -116,6 +116,10 @@
     {
       "type": "vcs",
       "url": "git@gitlab.salamek.cz:sadam/dravencms-packager.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@gitlab.salamek.cz:sadam/dravencms-recaptcha.git"
     }
   ],
   "authors": [
