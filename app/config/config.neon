@@ -18,12 +18,8 @@ includes:
   - extensions/webloader.neon
   - extensions/visualPaginator.neon
   - extensions/translation.neon
-  - extensions/recaptcha.neon
   - extensions/gravatar.neon
   - extensions/templatedEmail.neon
   - extensions/gitlab.neon
 
   - packages/packages.neon
-
-  - components.neon
-
