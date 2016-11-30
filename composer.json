@@ -156,11 +156,9 @@
   "scripts": {
     "post-install-cmd": [
       "php vendor/dravencms/packager/bin/packager packager:sync",
-      "php vendor/dravencms/packager/bin/script script:sync"
     ],
     "post-update-cmd": [
       "php vendor/dravencms/packager/bin/packager packager:sync",
-      "php vendor/dravencms/packager/bin/script script:sync"
     ]
   },
   "minimum-stability": "dev"
