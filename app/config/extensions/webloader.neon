@@ -134,6 +134,3 @@ webloader:
 
       fileFilters:
         - @jsMin
-
-includes:
-    - webloader-artificial-reason.neon
