@@ -1,3 +1,4 @@
+/app/config/packages/packages.neon
 /app/FrontModule/cms
 /app/config/config.local.neon
 /vendor/
