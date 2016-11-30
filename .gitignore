@@ -17,3 +17,4 @@
 /www/modules/*/*/bower_components
 /www/modules/*/*/template/bower_components
 /.idea
+/app/config/packages/dravencms
