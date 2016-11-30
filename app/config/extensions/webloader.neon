@@ -136,5 +136,4 @@ webloader:
         - @jsMin
 
 includes:
-    - webloader-college-green.neon
     - webloader-artificial-reason.neon

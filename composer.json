@@ -120,6 +120,10 @@
     {
       "type": "vcs",
       "url": "git@gitlab.salamek.cz:sadam/dravencms-recaptcha.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@gitlab.salamek.cz:sadam/dravencms-template-college-green.git"
     }
   ],
   "authors": [
@@ -131,16 +135,32 @@
     "nette/tester": "@dev"
   },
   "require": {
-    "dravencms/structure": "@dev",
     "dravencms/base": "@dev",
-    "dravencms/packager": "dev-master"
+    "dravencms/packager": "dev-master",
+    "dravencms/admin": "dev-master",
+    "dravencms/article": "dev-master",
+    "dravencms/seo": "dev-master",
+    "dravencms/template-college-green": "dev-master",
+    "dravencms/partner": "dev-master",
+    "dravencms/social": "dev-master",
+    "dravencms/form": "dev-master",
+    "dravencms/gallery": "dev-master",
+    "dravencms/faq": "dev-master",
+    "dravencms/carousel": "dev-master",
+    "dravencms/primitive": "dev-master",
+    "dravencms/timeline": "dev-master",
+    "dravencms/map": "dev-master",
+    "dravencms/issue": "dev-master",
+    "dravencms/discussion": "dev-master"
   },
   "scripts": {
     "post-install-cmd": [
-      "php vendor/dravencms/packager/bin/packager packager:sync"
+      "php vendor/dravencms/packager/bin/packager packager:sync",
+      "php vendor/dravencms/packager/bin/script script:sync"
     ],
     "post-update-cmd": [
-      "php vendor/dravencms/packager/bin/packager packager:sync"
+      "php vendor/dravencms/packager/bin/packager packager:sync",
+      "php vendor/dravencms/packager/bin/script script:sync"
     ]
   },
   "minimum-stability": "dev"
