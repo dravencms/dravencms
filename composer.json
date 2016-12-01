@@ -142,20 +142,7 @@
     "dravencms/base": "@dev",
     "dravencms/packager": "dev-master",
     "dravencms/admin": "dev-master",
-    "dravencms/article": "dev-master",
-    "dravencms/seo": "dev-master",
-    "dravencms/template-college-green": "dev-master",
-    "dravencms/partner": "dev-master",
-    "dravencms/social": "dev-master",
-    "dravencms/form": "dev-master",
-    "dravencms/gallery": "dev-master",
-    "dravencms/faq": "dev-master",
-    "dravencms/carousel": "dev-master",
-    "dravencms/primitive": "dev-master",
-    "dravencms/timeline": "dev-master",
-    "dravencms/map": "dev-master",
-    "dravencms/issue": "dev-master",
-    "dravencms/discussion": "dev-master"
+    "dravencms/issue": "dev-master"
   },
   "scripts": {
     "post-install-cmd": [
