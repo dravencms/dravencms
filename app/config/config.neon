@@ -19,6 +19,5 @@ includes:
   - extensions/visualPaginator.neon
   - extensions/gravatar.neon
   - extensions/templatedEmail.neon
-  - extensions/gitlab.neon
 
   - packages/packages.neon
