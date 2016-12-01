@@ -124,6 +124,10 @@
     {
       "type": "vcs",
       "url": "git@gitlab.salamek.cz:sadam/dravencms-template-college-green.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@gitlab.salamek.cz:sadam/dravencms-translation.git"
     }
   ],
   "authors": [
@@ -155,12 +159,10 @@
   },
   "scripts": {
     "post-install-cmd": [
-      "php vendor/dravencms/packager/bin/packager packager:sync",
-      "php vendor/dravencms/packager/bin/script script:sync"
+      "php vendor/dravencms/packager/bin/packager packager:sync"
     ],
     "post-update-cmd": [
-      "php vendor/dravencms/packager/bin/packager packager:sync",
-      "php vendor/dravencms/packager/bin/script script:sync"
+      "php vendor/dravencms/packager/bin/packager packager:sync"
     ]
   },
   "minimum-stability": "dev"
