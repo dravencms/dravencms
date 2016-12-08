@@ -1,8 +1,0 @@
-extensions:
-	templatedEmail: Salamek\TemplatedEmail\DI\TemplatedEmailExtension
-
-templatedEmail:
-    sendEmailDebugStorage: %tempDir%/sendEmails
-    templateStorage: %appDir%/emailTemplates
-    fromName: 'dravemCMS'
-    fromEmail: 'info@example.com'
