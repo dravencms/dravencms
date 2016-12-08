@@ -29,7 +29,7 @@ doctrine:
     driver: %database.driver%
     metadata:
         App: %appDir%
-        Dravencms: %appDir%/../vendor/salamek
+        Dravencms: %appDir%/../vendor/dravencms
 
     types:
         bit: Doctrine\DBAL\Types\BooleanType
