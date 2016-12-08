@@ -136,6 +136,10 @@
     {
       "type": "vcs",
       "url": "git@gitlab.salamek.cz:sadam/dravencms-file-download.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@gitlab.salamek.cz:sadam/dravencms-paginator.git"
     }
   ],
   "authors": [
