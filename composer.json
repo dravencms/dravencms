@@ -144,6 +144,10 @@
     {
       "type": "vcs",
       "url": "git@gitlab.salamek.cz:sadam/dravencms-templated-email.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@gitlab.salamek.cz:sadam/dravencms-eshop.git"
     }
   ],
   "authors": [
