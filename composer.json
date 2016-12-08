@@ -148,6 +148,10 @@
     {
       "type": "vcs",
       "url": "git@gitlab.salamek.cz:sadam/dravencms-eshop.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@gitlab.salamek.cz:sadam/dravencms-template-bushido.git"
     }
   ],
   "authors": [
