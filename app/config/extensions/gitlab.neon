@@ -1,7 +1,0 @@
-extensions:
-  gitlab: Salamek\Gitlab\DI\GitlabExtension
-
-gitlab:
-  gitlabUrl: https://gitlab.salamek.cz/api/v3
-  gitlabToken: 'mAo4xfrqyF5NELRny7nX'
-  projectName: sadam/dravencms
