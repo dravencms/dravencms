@@ -2,7 +2,7 @@ extensions:
   webloader: WebLoader\Nette\Extension
 
 parameters:
-  webloaderDir: %appDir%/../www
+  webloaderDir: %appDir%/../www/templates
 
 services:
   wlCssFilter: WebLoader\Filter\CssUrlsFilter(%wwwDir%)
