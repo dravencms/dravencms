@@ -16,7 +16,6 @@ includes:
   - extensions/php.neon
   - extensions/sentry.neon
   - extensions/webloader.neon
-  - extensions/visualPaginator.neon
   - extensions/gravatar.neon
   - extensions/templatedEmail.neon
 
