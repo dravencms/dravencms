@@ -128,6 +128,14 @@
     {
       "type": "vcs",
       "url": "git@gitlab.salamek.cz:sadam/dravencms-translation.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@gitlab.salamek.cz:sadam/dravencms-location.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@gitlab.salamek.cz:sadam/dravencms-file-download.git"
     }
   ],
   "authors": [
