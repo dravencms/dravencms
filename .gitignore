@@ -12,7 +12,5 @@
 !/www/data/README.md
 /www/webtemp/*
 !/www/webtemp/README.md
-/www/modules/*/bower_components
-/www/modules/*/*/bower_components
-/www/modules/*/*/template/bower_components
+/www/assets/*
 /.idea
