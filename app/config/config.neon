@@ -17,6 +17,5 @@ includes:
   - extensions/sentry.neon
   - extensions/webloader.neon
   - extensions/gravatar.neon
-  - extensions/templatedEmail.neon
 
   - packages/packages.neon
