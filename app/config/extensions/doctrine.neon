@@ -22,11 +22,12 @@ gedmo:
     uploadable: off # System for storing info about uploaded/stored files...
 
 doctrine:
-    host: %database.host%
-    user: %database.user%
-    password: %database.password%
-    dbname: %database.dbname%
-    driver: %database.driver%
+    default:
+        host: %database.host%
+        user: %database.user%
+        password: %database.password%
+        dbname: %database.dbname%
+        driver: %database.driver%
     metadata:
         App: %appDir%
         Dravencms: %appDir%/../vendor/dravencms
