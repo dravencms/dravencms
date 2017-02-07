@@ -1,4 +1,3 @@
-
 application:
     errorPresenter: Front:Error
     mapping:
@@ -6,6 +5,7 @@ application:
 
 session:
     expiration: 14 days
+    autoStart: true
 
 di:
     debugger: true
