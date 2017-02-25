@@ -163,7 +163,6 @@
     "nette/tester": "@dev"
   },
   "require": {
-    "dravencms/base": "@dev",
     "dravencms/packager": "dev-master",
     "dravencms/admin": "dev-master",
     "dravencms/issue": "dev-master"
