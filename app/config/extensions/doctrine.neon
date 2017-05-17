@@ -29,7 +29,6 @@ doctrine:
         dbname: %database.dbname%
         driver: %database.driver%
     metadata:
-        App: %appDir%
         Dravencms: %appDir%/../vendor/dravencms
 
     types:
