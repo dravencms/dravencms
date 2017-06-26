@@ -111,18 +111,6 @@
     },
     {
       "type": "vcs",
-      "url": "git@gitlab.salamek.cz:sadam/dravencms-base.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@gitlab.salamek.cz:sadam/dravencms-packager.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@gitlab.salamek.cz:sadam/dravencms-recaptcha.git"
-    },
-    {
-      "type": "vcs",
       "url": "git@gitlab.salamek.cz:sadam/dravencms-template-college-green.git"
     },
     {
@@ -136,10 +124,6 @@
     {
       "type": "vcs",
       "url": "git@gitlab.salamek.cz:sadam/dravencms-file-download.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@gitlab.salamek.cz:sadam/dravencms-paginator.git"
     },
     {
       "type": "vcs",
