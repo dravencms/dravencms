@@ -19,7 +19,9 @@
   "require": {
     "dravencms/packager": "^v1.0",
     "dravencms/admin": "^v1.0",
-    "dravencms/issue": "^v1.0"
+    "dravencms/issue": "^v1.0",
+    
+    "o5/grido": "dev-master"
   },
   "scripts": {
     "post-install-cmd": [
