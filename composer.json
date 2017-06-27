@@ -71,38 +71,6 @@
     },
     {
       "type": "vcs",
-      "url": "git@gitlab.salamek.cz:sadam/dravencms-file.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@gitlab.salamek.cz:sadam/dravencms-seo.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@gitlab.salamek.cz:sadam/dravencms-tag.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@gitlab.salamek.cz:sadam/dravencms-issue.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@gitlab.salamek.cz:sadam/dravencms-locale.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@gitlab.salamek.cz:sadam/dravencms-structure.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@gitlab.salamek.cz:sadam/dravencms-user.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@gitlab.salamek.cz:sadam/dravencms-admin.git"
-    },
-    {
-      "type": "vcs",
       "url": "git@gitlab.salamek.cz:sadam/dravencms-primitive.git"
     },
     {
@@ -112,22 +80,6 @@
     {
       "type": "vcs",
       "url": "git@gitlab.salamek.cz:sadam/dravencms-template-college-green.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@gitlab.salamek.cz:sadam/dravencms-translation.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@gitlab.salamek.cz:sadam/dravencms-location.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@gitlab.salamek.cz:sadam/dravencms-file-download.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@gitlab.salamek.cz:sadam/dravencms-templated-email.git"
     },
     {
       "type": "vcs",
