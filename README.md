@@ -5,7 +5,7 @@ This is a Draven CMS !
 ## How to create new Draven CMS project
 
 ```sh
-composer create-project dravencms/dravencms:@dev PROJECT_NAME
+composer create-project dravencms/dravencms:dev-master PROJECT_NAME
 ```
 
 ## Instalation
