@@ -51,7 +51,7 @@ These packages can be installed but are in Work In Progress
 You can install these packages by issuing this command in project directory:
 
 ```sh
-composer require dravencms/PACKAGE_NAME issued in project directory
+composer require dravencms/PACKAGE_NAME
 ```
 
 ## Configuration
