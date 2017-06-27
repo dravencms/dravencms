@@ -8,20 +8,6 @@
   "license": [
     "LGPL-3.0"
   ],
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "git@gitlab.salamek.cz:sadam/dravencms-template-college-green.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@gitlab.salamek.cz:sadam/dravencms-eshop.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@gitlab.salamek.cz:sadam/dravencms-template-bushido.git"
-    }
-  ],
   "authors": [
     {
       "name": "Adam Schubert"
