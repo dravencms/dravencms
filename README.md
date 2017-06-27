@@ -2,7 +2,7 @@
 
 This is a Draven CMS !
 
-## Create new Draven CMS project
+## How to create new Draven CMS project
 
 ```sh
 composer create-project dravencms/dravencms:@dev PROJECT_NAME
