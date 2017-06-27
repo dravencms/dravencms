@@ -35,50 +35,6 @@
     },
     {
       "type": "vcs",
-      "url": "git@gitlab.salamek.cz:sadam/dravencms-timeline.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@gitlab.salamek.cz:sadam/dravencms-article.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@gitlab.salamek.cz:sadam/dravencms-carousel.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@gitlab.salamek.cz:sadam/dravencms-gallery.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@gitlab.salamek.cz:sadam/dravencms-faq.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@gitlab.salamek.cz:sadam/dravencms-form.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@gitlab.salamek.cz:sadam/dravencms-map.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@gitlab.salamek.cz:sadam/dravencms-discussion.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@gitlab.salamek.cz:sadam/dravencms-partner.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@gitlab.salamek.cz:sadam/dravencms-primitive.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@gitlab.salamek.cz:sadam/dravencms-social.git"
-    },
-    {
-      "type": "vcs",
       "url": "git@gitlab.salamek.cz:sadam/dravencms-template-college-green.git"
     },
     {
