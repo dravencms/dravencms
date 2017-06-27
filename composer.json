@@ -17,9 +17,9 @@
     "nette/tester": "@dev"
   },
   "require": {
-    "dravencms/packager": "dev-master",
-    "dravencms/admin": "dev-master",
-    "dravencms/issue": "dev-master"
+    "dravencms/packager": "^v1.0",
+    "dravencms/admin": "^v1.0",
+    "dravencms/issue": "^v1.0"
   },
   "scripts": {
     "post-install-cmd": [
