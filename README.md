@@ -29,7 +29,7 @@ composer create-project dravencms/dravencms:dev-master PROJECT_NAME
 - `dravencms/dravencms-template-bushido` Bushido template [Commercial]
 - `dravencms/dravencms-template-college-green` College Green template [Commercial]
 
-You can install these packages by 
+You can install these packages by issuing this command in project directory:
 
 ```sh
 composer require dravencms/PACKAGE_NAME issued in project directory
