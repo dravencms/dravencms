@@ -11,14 +11,6 @@
   "repositories": [
     {
       "type": "vcs",
-      "url": "git@gitlab.salamek.cz:sadam/packagebot-local.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@gitlab.salamek.cz:sadam/czech-post-api.git"
-    },
-    {
-      "type": "vcs",
       "url": "git@gitlab.salamek.cz:sadam/dravencms-template-college-green.git"
     },
     {
