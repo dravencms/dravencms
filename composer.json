@@ -21,7 +21,7 @@
     "dravencms/admin": "^v1.0",
     "dravencms/issue": "^v1.0",
     
-    "o5/grido": "dev-master"
+    "o5/grido": "dev-master",
     "janmarek/webloader": "dev-master"
   },
   "scripts": {
