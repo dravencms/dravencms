@@ -19,22 +19,6 @@
     },
     {
       "type": "vcs",
-      "url": "git@gitlab.salamek.cz:sadam/nette-files.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@gitlab.salamek.cz:sadam/nette-templated-email.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@gitlab.salamek.cz:sadam/nette-gitlab.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@gitlab.salamek.cz:sadam/nette-cms.git"
-    },
-    {
-      "type": "vcs",
       "url": "git@gitlab.salamek.cz:sadam/dravencms-template-college-green.git"
     },
     {
