@@ -9,11 +9,6 @@ $configurator = new Nette\Configurator;
 // Specify folder for cache
 $configurator->setTempDirectory(__DIR__ . '/../temp');
 
-// Enable RobotLoader - this will load all classes automatically
-$configurator->createRobotLoader()
-    ->addDirectory(__DIR__)
-    ->register();
-
 // Enable Nette Debugger for error visualisation & logging
 //$configurator->setDebugMode(false);
 
