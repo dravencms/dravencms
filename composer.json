@@ -22,8 +22,7 @@
     "dravencms/issue": "^v1.0",
     
     "o5/grido": "dev-master",
-    "janmarek/webloader": "dev-master",
-    "natxet/cssmin": "dev-master"
+    "janmarek/webloader": "dev-master"
   },
   "scripts": {
     "post-install-cmd": [
