@@ -1,7 +1,0 @@
-#extensions:
-#  sentryLogger: Salamek\RavenNette\DI\SentryLoggerExtension
-
-#sentryLogger:
-#  dsn: 'https://08d6a89b43374219a67162d8aba0adf4:cbf97ab5af68494fa8c9c64cc47fe1ec@sentry.salamek.cz/9'
-#  inDebug: false
-#  email: null
