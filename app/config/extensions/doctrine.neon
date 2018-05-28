@@ -27,8 +27,6 @@ doctrine:
         password: %database.password%
         dbname: %database.dbname%
         driver: %database.driver%
-    metadata:
-        Dravencms: %appDir%/../vendor/dravencms
 
     types:
         bit: Doctrine\DBAL\Types\BooleanType
