@@ -3,8 +3,7 @@ extensions:
     annotations: Kdyby\Annotations\DI\AnnotationsExtension
     gedmo: Rixxi\Gedmo\DI\OrmExtension
     doctrine: Kdyby\Doctrine\DI\OrmExtension
-    - Symnedi\EventDispatcher\DI\EventDispatcherExtension
-    migrations: Zenify\DoctrineMigrations\DI\MigrationsExtension
+    migrations: Nettrine\Migrations\DI\MigrationsExtension
 
 gedmo:
     #translatableLocale: cs
@@ -47,5 +46,4 @@ migrations:
     #column: version # database column for applied migrations
     directory: %appDir%/../migrations # directory, where all migrations are stored
     namespace: Migrations # namespace of migration classes
-    codingStandard: spaces # or "spaces", coding style for generated classes
     versionsOrganization: 'year' # null, "year" or "year_and_month", organizes migrations to subdirectories

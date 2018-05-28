@@ -4,3 +4,6 @@ extensions:
 decorator:
   Symfony\Component\Console\Command\Command:
     tags: [kdyby.console.command]
+
+  Symfony\Component\Console\Helper\Helper:
+    tags: [kdyby.console.helper]

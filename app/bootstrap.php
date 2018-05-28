@@ -17,6 +17,10 @@ $configurator->enableDebugger(__DIR__ . '/../log', 'adam.schubert@sg1-game.net')
 // Create Dependency Injection container from config.neon file
 $configurator->addConfig(__DIR__ . '/config/config.neon');
 $configurator->addConfig(__DIR__ . '/config/config.local.neon');
+$configurator->addParameters([
+    'appDir' => __DIR__,
+    'wwwDir' => dirname(__DIR__) . '/www',
+]);
 $container = $configurator->createContainer();
 
 return $container;
