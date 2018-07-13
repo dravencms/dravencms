@@ -7,13 +7,13 @@ This is a Draven CMS !
 The best way to install dravencms/dravencms is using  [Composer](http://getcomposer.org/):
 
 ```sh
-composer create-project dravencms/dravencms:dev-master PROJECT_NAME
+composer create-project dravencms/dravencms PROJECT_NAME
 ```
 
 or add as depedency to your project 
 
 ```sh
-$ composer require dravencms/dravencms:dev-master
+$ composer require dravencms/dravencms
 ```
 
 ## Optional packages
