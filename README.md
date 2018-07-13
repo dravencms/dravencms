@@ -18,6 +18,13 @@ $ composer require dravencms/dravencms
 
 ## Optional packages
 
+Optional packages can be installed wia composer like this:
+
+```
+$ composer require dravencms/article
+```
+and so on...
+
 These packages can be installed for free (OSS)
 
 - `dravencms/article` Provides simple article/blog system
