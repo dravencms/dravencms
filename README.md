@@ -79,6 +79,12 @@ php www/index.php orm:s:c
 php www/index.php orm:default-data:load
 ```
 
+If you installed `dravencms/structure` or any package depended on it, you should run this command to generate default presenters:
+
+```sh
+php www/index.php cms:presenters:generate
+```
+
 That should be all, now open http://localhost/admin in your browser and you shoud be able to log in to new DravenCMS installation with:
 
 Username: `admin@example.com`
