@@ -18,9 +18,7 @@
   },
   "require": {
     "dravencms/packager": "^v1.0",
-    "dravencms/admin": "^v1.0",
-    "dravencms/issue": "^v1.0",
-    
+    "dravencms/admin": "^v1.0",    
     "janmarek/webloader": "dev-master"
   },
   "scripts": {
