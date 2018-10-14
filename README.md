@@ -64,8 +64,6 @@ composer require dravencms/PACKAGE_NAME
 
 ## Configuration
 
-You should have your webserver configured already and pointed to PROJECT_DIR/www
-
 1. You have to create new database, DravenCMS supports MySQL/MariaDB and PostgreSQL (it may work on other databases supported by doctrine2 like SQLite, Oracle, Microsoft SQL Server and SAP Sybase SQL)
 2. Copy example configuration `cp app/config/config.local.neon.example app/config/config.local.neon`
 3. Modify `app/config/config.local.neon` to match your new database credentials and driver
@@ -85,7 +83,17 @@ If you installed `dravencms/structure` or any package depended on it, you should
 php www/index.php cms:presenters:generate
 ```
 
-That should be all, now open http://localhost/admin in your browser and you shoud be able to log in to new DravenCMS installation with:
+## Running
+
+For testing and developement you can use build in PHP web server:
+
+```sh
+php -S localhost:8000 -t www www/index.php
+```
+
+***!!! Use Nginx or Apache for production ENV !!!***
+
+That should be all, now open http://localhost:8000/admin in your browser and you shoud be able to log in to new DravenCMS installation with:
 
 Username: `admin@example.com`
 
