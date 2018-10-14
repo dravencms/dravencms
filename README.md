@@ -39,6 +39,7 @@ These packages can be installed for free (OSS)
 - `dravencms/gallery` Provides simple gallery system
 - `dravencms/primitive` Provides simple primitive components like Call To Action buttons etc.
 - `dravencms/partner` Provides simple partner carousel
+- `dravencms/structure` Privides CMS capabilities, lot of other packages install it as depedency.
 
 ## Commercial packages
 
@@ -76,7 +77,6 @@ For installation run these commands
 ```sh
 php www/index.php orm:s:c
 php www/index.php orm:default-data:load
-php www/index.php cms:presenters:generate
 ```
 
 That should be all, now open http://localhost/admin in your browser and you shoud be able to log in to new DravenCMS installation with:
