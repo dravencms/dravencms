@@ -73,14 +73,14 @@ composer require dravencms/PACKAGE_NAME
 For installation run these commands
 
 ```sh
-php www/index.php orm:s:c
-php www/index.php orm:default-data:load
+./bin/console orm:s:c
+./bin/console orm:default-data:load
 ```
 
 If you installed `dravencms/structure` or any package depended on it, you should run this command to generate default presenters:
 
 ```sh
-php www/index.php cms:presenters:generate
+./bin/console cms:presenters:generate
 ```
 
 ## Running
