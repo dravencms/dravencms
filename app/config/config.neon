@@ -18,3 +18,5 @@ includes:
   - extensions/gravatar.neon
 
   - packages/packages.neon
+
+  - settings.neon
