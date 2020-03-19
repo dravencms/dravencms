@@ -1,7 +1,6 @@
 /app/FrontModule/cms
 /app/config/config.local.neon
 /vendor/
-/composer.lock
 /temp/*
 !/temp/.htaccess
 !/temp/web.config
