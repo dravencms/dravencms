@@ -19,7 +19,8 @@
   "require": {
     "dravencms/packager": "^v1.0",
     "dravencms/admin": "^v1.0",    
-    "janmarek/webloader": "dev-master"
+    "janmarek/webloader": "dev-master",
+     "majkl578/nette-identity-doctrine": "^v2.3-rc1"
   },
   "scripts": {
     "post-install-cmd": [
