@@ -5,6 +5,3 @@ parameters:
         password: 'DATABASE_PASSWORD'
         dbname: 'DATABASE_NAME'
         driver: pdo_mysql  # or pdo_pgsql for PostgreSQL
-
-    layout:
-        name: collegeGreen
