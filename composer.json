@@ -17,11 +17,30 @@
     "nette/tester": "@dev"
   },
   "require": {
-    "php": ">=7.1",
-    "dravencms/packager": ">=v1.0",
-    "dravencms/admin": ">=v1.0",    
-    "janmarek/webloader": "dev-master",
-     "majkl578/nette-identity-doctrine": "^v2.3-rc1"
+    "php": ">= 7.3.0",
+    "ext-openssl": "*",
+    "ext-json": "*",
+    "ext-gd": "*",
+    "nette/nette": ">=3.0",
+    "dravencms/packager": ">=2.0",
+    "bicisteadm/webloader-reload": "^3.0.0",
+    "joseki/webloader-filters": "^1.1",
+    "linkorb/jsmin-php": ">=1.0.0",
+    "scssphp/scssphp": "^v1.6.0",
+    "natxet/cssmin": "dev-master",
+
+
+    "dravencms/recaptcha": "^v2.0",
+    "ublaboo/datagrid": "^6.9",
+
+    "nettrine/orm": "^0.8.2",
+    "nettrine/dbal": "^0.7.0",
+    "nettrine/cache": "^0.3.0",
+    "nettrine/migrations": "^v0.7.1",
+    "contributte/console": "^0.9.1",
+    "nettrine/annotations": "^0.7.0",
+    "nettrine/fixtures": "^0.6.0",
+    "contributte/monolog": "^0.5.0"
   },
   "scripts": {
     "post-install-cmd": [

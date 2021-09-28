@@ -10,12 +10,12 @@ parameters:
   dataDir: %wwwDir%/data
 
 includes:
-  - extensions/doctrine.neon
+  - extensions/nettrine.neon
   - extensions/console.neon
   - extensions/nette.neon
   - extensions/php.neon
   - extensions/webloader.neon
-  - extensions/gravatar.neon
+  - extensions/monolog.neon
 
   - packages/packages.neon
 

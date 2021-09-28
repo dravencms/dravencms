@@ -1,9 +1,2 @@
 extensions:
-  console: Kdyby\Console\DI\ConsoleExtension
-
-decorator:
-  Symfony\Component\Console\Command\Command:
-    tags: [kdyby.console.command]
-
-  Symfony\Component\Console\Helper\Helper:
-    tags: [kdyby.console.helper]
+  console: Contributte\Console\DI\ConsoleExtension(%consoleMode%)
