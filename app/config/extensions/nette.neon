@@ -1,8 +1,3 @@
-application:
-    errorPresenter: Front:Error
-    mapping:
-        *: Dravencms\*Module\*Presenter
-
 session:
     expiration: 14 days
     autoStart: true

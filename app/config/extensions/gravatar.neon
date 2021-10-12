@@ -1,4 +1,0 @@
-extensions:
-    gravatar: IPub\Gravatar\DI\GravatarExtension
-gravatar:
-    defaultImage: retro
