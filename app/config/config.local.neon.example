@@ -1,6 +1,7 @@
 parameters:
     database:
         host: localhost
+        port: 3306
         user: 'DATABASE_USER'
         password: 'DATABASE_PASSWORD'
         dbname: 'DATABASE_NAME'

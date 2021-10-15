@@ -21,8 +21,8 @@
     "ext-openssl": "*",
     "ext-json": "*",
     "ext-gd": "*",
+    "tracy/tracy": "^2.8",
     "dravencms/packager": ">=2.0"
-
   },
   "scripts": {
     "post-install-cmd": [

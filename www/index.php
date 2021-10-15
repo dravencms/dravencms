@@ -2,6 +2,7 @@
 
 if (php_sapi_name() == 'cli-server') {
     $_SERVER['SCRIPT_NAME'] = '/index.php';
+    $_SERVER['PHP_SELF'] = '/index.php'; // Fix to get webloader CssUrlsFilter to work correctly under cli-server
     $parsedUrl = parse_url($_SERVER["REQUEST_URI"]);
     if (is_file(__DIR__.$parsedUrl['path'])) {
         return false;    // serve the requested resource as-is.

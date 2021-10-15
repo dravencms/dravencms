@@ -73,8 +73,8 @@ composer require dravencms/PACKAGE_NAME
 For installation run these commands
 
 ```sh
-./bin/console orm:s:c
-./bin/console orm:default-data:load
+./bin/console orm:schema-tool:create
+./bin/console database:default-data:load
 ```
 
 If you installed `dravencms/structure` or any package depended on it, you should run this command to generate default presenters:
@@ -85,7 +85,7 @@ If you installed `dravencms/structure` or any package depended on it, you should
 
 ## Running
 
-For testing and developement you can use build in PHP web server:
+For testing and development you can use build in PHP web server:
 
 ```sh
 php -S localhost:8000 -t www www/index.php
