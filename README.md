@@ -37,7 +37,6 @@ These packages can be installed for free (OSS)
 - `dravencms/seo` Provides simple SEO tools (sitemap, robots.txt, etc.)
 - `dravencms/file-download` Allows simple file download
 - `dravencms/gallery` Provides simple gallery system
-- `dravencms/primitive` Provides simple primitive components like Call To Action buttons etc.
 - `dravencms/partner` Provides simple partner carousel
 - `dravencms/structure` Privides CMS capabilities, lot of other packages install it as depedency.
 
