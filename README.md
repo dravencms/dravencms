@@ -73,6 +73,7 @@ For installation run these commands
 
 ```sh
 ./bin/console orm:schema-tool:create
+./bin/console orm:generate-proxies
 ./bin/console database:default-data:load
 ```
 
