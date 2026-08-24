@@ -1,107 +1,116 @@
 # DravenCMS
 
-This is a Draven CMS !
+Modular content-management system built on Nette, Doctrine ORM, Latte, and reusable `dravencms/*` packages. This repository is the project skeleton and package synchronizer entry point; applications select the feature packages they need.
 
-## How to create new Draven CMS project
+## Requirements
 
-The best way to install dravencms/dravencms is using  [Composer](http://getcomposer.org/):
+- A PHP version supported by the selected DravenCMS packages.
+- Composer.
+- MySQL/MariaDB or PostgreSQL for the standard database configuration.
+- A writable `temp`, `log`, `www/data`, and `www/webtemp` setup for the web/PHP process.
+- Node/npm only when rebuilding package frontend assets.
 
-```sh
-composer create-project dravencms/dravencms PROJECT_NAME
+## Create a Project
+
+```bash
+composer create-project dravencms/dravencms my-project
+cd my-project
 ```
 
-or add as depedency to your project 
+Install the application packages required by the project. A typical administration-enabled installation starts with:
 
-```sh
-$ composer require dravencms/dravencms
+```bash
+composer require dravencms/admin dravencms/frontend dravencms/recaptcha
 ```
 
-## Optional packages
+`dravencms/admin` brings in the shared application, database, user, form, grid, locale, and related dependencies. `dravencms/recaptcha` satisfies the CAPTCHA implementation required by the user package; `dravencms/antiq-captcha` is the self-hosted alternative.
 
-Optional packages can be installed wia composer like this:
+Feature packages can then be added independently, for example:
 
-```
-$ composer require dravencms/article
-```
-and so on...
-
-These packages can be installed for free (OSS)
-
-- `dravencms/article` Provides simple article/blog system
-- `dravencms/form` Provides customizable forms with option to send data on email and into DB
-- `dravencms/fag` Provides simple FAQ system
-- `dravencms/carousel` Provides simple image carousel system
-- `dravencms/map` Provides simple Google Map system
-- `dravencms/file` Provides files administration
-- `dravencms/social` Provides simple social tools (FB Buttons etc.)
-- `dravencms/seo` Provides simple SEO tools (sitemap, robots.txt, etc.)
-- `dravencms/file-download` Allows simple file download
-- `dravencms/gallery` Provides simple gallery system
-- `dravencms/partner` Provides simple partner carousel
-- `dravencms/structure` Privides CMS capabilities, lot of other packages install it as depedency.
-
-## Commercial packages
-
-These packages cant be installed withnout payment (To package provider or 3rd party)
-
-- `dravencms/eshop` Provides eshop functionality - Contact me if you want to know more
-- `dravencms/dravencms-template-bushido` Bushido template (You have to have valid licence for Bushido template)
-- `dravencms/dravencms-template-college-green` College Green template (You have to have valid licence for College Green template)
-
-## Work In Progress (WIP) packages
-
-These packages can be installed but are in Work In Progress
-
-- `dravencms/discussion` Provides simple discussions
-- `dravencms/timeline` Shows timeline
-
-You can install these packages by issuing this command in project directory:
-
-```sh
-composer require dravencms/PACKAGE_NAME
+```bash
+composer require dravencms/file dravencms/tag dravencms/gallery dravencms/seo
 ```
 
-## Configuration
+Composer runs `packager:sync` after install and update operations. The packager copies public assets and installs each package's `dravencms.config.neon` into the application package configuration.
 
-1. You have to create new database, DravenCMS supports MySQL/MariaDB and PostgreSQL (it may work on other databases supported by doctrine2 like SQLite, Oracle, Microsoft SQL Server and SAP Sybase SQL)
-2. Copy example configuration `cp app/config/config.local.neon.example app/config/config.local.neon`
-3. Modify `app/config/config.local.neon` to match your new database credentials and driver
+## Configure the Database
 
-## Installation
+Create the local configuration:
 
-For installation run these commands
-
-```sh
-./bin/console orm:schema-tool:create
-./bin/console orm:generate-proxies
-./bin/console database:default-data:load
+```bash
+cp app/config/config.local.neon.example app/config/config.local.neon
 ```
 
-If you installed `dravencms/structure` or any package depended on it, you should run this command to generate default presenters:
+Set the connection values:
 
-```sh
-./bin/console cms:presenters:generate
+```neon
+parameters:
+    database:
+        driver: pdo_mysql
+        host: 127.0.0.1
+        port: 3306
+        user: app
+        password: secret
+        dbname: app
 ```
 
-## Running
+Keep production credentials outside version control.
 
-For testing and development you can use build in PHP web server:
+## Initialize a Fresh Database
 
-```sh
+For a disposable development database, create the schema, proxies, and default fixture data:
+
+```bash
+php bin/console orm:schema-tool:create
+php bin/console orm:generate-proxies
+php bin/console database:default-data:load
+```
+
+Use versioned Doctrine migrations for existing and production databases. The default-data command purges mapped data before loading fixtures and must not be run against a database that needs to be preserved.
+
+When `dravencms/structure` is installed, generate its presenter classes as required by that package:
+
+```bash
+php bin/console cms:presenters:generate
+```
+
+## Development Server
+
+Run the application with PHP's built-in server:
+
+```bash
 php -S localhost:8000 -t www www/index.php
 ```
 
-***!!! Use Nginx or Apache for production ENV !!!***
+Open `http://localhost:8000/admin` for the administration interface. Use the bundled Nginx/Apache configuration as a starting point for a real web server; the PHP development server is not intended for production.
 
-That should be all, now open http://localhost:8000/admin in your browser and you shoud be able to log in to new DravenCMS installation with:
+## Default Fixture Account
 
-Username: `admin@example.com`
+The User package fixtures create an administrator account with these public development credentials:
 
-Password: `adminExample`
+```text
+Username: admin@example.com
+Password: adminExample
+```
 
+Replace or disable this account immediately. Never deploy an application where these credentials remain usable.
 
+## Package Overview
 
+Core infrastructure:
 
+- `dravencms/application`, `database`, `console`, `logging`, and `webloader`
+- `dravencms/base-form`, `base-grid`, `translation`, and `frontend`
+- `dravencms/admin`, `user`, `locale`, and `location`
 
+Optional modules in this repository set:
 
+- `dravencms/file`, `gallery`, `tag`, `partner`, `seo`, and `cookie-consent`
+- `dravencms/captcha` with `recaptcha` or `antiq-captcha`
+- `dravencms/templated-email`
 
+Each package README documents its configuration, integration points, fixtures, and operational warnings.
+
+## License
+
+DravenCMS is licensed under the LGPL-3.0 license unless a package states a more specific SPDX variant.
